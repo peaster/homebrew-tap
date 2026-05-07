@@ -11,7 +11,7 @@ class GitDaily < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/peaster/git-daily/releases/download/v0.4.0/git-daily_0.4.0_darwin_amd64.tar.gz"
-      sha256 "4b6492e8f301ef0e16f21c1e2bb3b370ae44413e42d3ade5680c2dea7f79be21"
+      sha256 "af76eb54d62ef07a1297d7b07966284744da27267728b8612a0cbdf9a75d3ee7"
 
       define_method(:install) do
         bin.install "git-daily"
@@ -19,7 +19,7 @@ class GitDaily < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/peaster/git-daily/releases/download/v0.4.0/git-daily_0.4.0_darwin_arm64.tar.gz"
-      sha256 "586595d5d649ebbd46481d3338dd6b22bdf7a56de93168cc2d6b289b63a14192"
+      sha256 "cd6bfa264c4fe6a206cc12b57dc6deb8f59f97b222631cbe96bb5d0aad01a4d6"
 
       define_method(:install) do
         bin.install "git-daily"
@@ -30,14 +30,14 @@ class GitDaily < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/peaster/git-daily/releases/download/v0.4.0/git-daily_0.4.0_linux_amd64.tar.gz"
-      sha256 "ac0765a9fe95acce141d6d6c71ca40976b576a37a0647aadf834e5e03089f788"
+      sha256 "c538ccdc9219806be48f792e1088f50a059cf63a9db75ded1dc72ab80fbf66f8"
       define_method(:install) do
         bin.install "git-daily"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/peaster/git-daily/releases/download/v0.4.0/git-daily_0.4.0_linux_arm64.tar.gz"
-      sha256 "db9539518836ae66aa03c0748d25a9aca8b78a6d97644283b41ab06c6aae2af6"
+      sha256 "6201b772f0cb9643856b764f1a72fa7e35ea1717ea6415a59feccc0b660bce43"
       define_method(:install) do
         bin.install "git-daily"
       end
