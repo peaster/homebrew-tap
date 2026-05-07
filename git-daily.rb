@@ -5,21 +5,21 @@
 class GitDaily < Formula
   desc "Extract your git activity across repos for a specific period of time."
   homepage "https://github.com/peaster/git-daily"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/peaster/git-daily/releases/download/v0.3.0/git-daily_0.3.0_darwin_amd64.tar.gz"
-      sha256 "37daef1eea6c2d8ed5ae227631bb75a1b75c11d0ca3a710363d61124fb3ac60d"
+      url "https://github.com/peaster/git-daily/releases/download/v0.4.0/git-daily_0.4.0_darwin_amd64.tar.gz"
+      sha256 "4b6492e8f301ef0e16f21c1e2bb3b370ae44413e42d3ade5680c2dea7f79be21"
 
       define_method(:install) do
         bin.install "git-daily"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/peaster/git-daily/releases/download/v0.3.0/git-daily_0.3.0_darwin_arm64.tar.gz"
-      sha256 "562e96698569c3247d7c8b56eed83a8d8dc2341baddee9a92fbba62f4e4171bf"
+      url "https://github.com/peaster/git-daily/releases/download/v0.4.0/git-daily_0.4.0_darwin_arm64.tar.gz"
+      sha256 "586595d5d649ebbd46481d3338dd6b22bdf7a56de93168cc2d6b289b63a14192"
 
       define_method(:install) do
         bin.install "git-daily"
@@ -29,15 +29,15 @@ class GitDaily < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/peaster/git-daily/releases/download/v0.3.0/git-daily_0.3.0_linux_amd64.tar.gz"
-      sha256 "92a2562a927156cd2895788a533d2af78f837457d47293f98239aa9c62575c8a"
+      url "https://github.com/peaster/git-daily/releases/download/v0.4.0/git-daily_0.4.0_linux_amd64.tar.gz"
+      sha256 "ac0765a9fe95acce141d6d6c71ca40976b576a37a0647aadf834e5e03089f788"
       define_method(:install) do
         bin.install "git-daily"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/peaster/git-daily/releases/download/v0.3.0/git-daily_0.3.0_linux_arm64.tar.gz"
-      sha256 "60a563710457ef54f19a798588d3042181724473235f3c8efc671e34bf442b92"
+      url "https://github.com/peaster/git-daily/releases/download/v0.4.0/git-daily_0.4.0_linux_arm64.tar.gz"
+      sha256 "db9539518836ae66aa03c0748d25a9aca8b78a6d97644283b41ab06c6aae2af6"
       define_method(:install) do
         bin.install "git-daily"
       end
